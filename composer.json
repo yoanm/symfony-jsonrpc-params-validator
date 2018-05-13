@@ -1,0 +1,45 @@
+{
+    "name": "yoanm/symfony-jsonrpc-params-validator",
+    "description": "Symfony bundle for easy JSON-RPC params validation",
+    "license": "GPL-3.0-only",
+    "type": "library",
+    "support": {
+        "issues": "https://github.com/yoanm/symfony-jsonrpc-params-validator/issues"
+    },
+    "authors": [
+        {
+            "name": "Yoanm",
+            "email": "yoanm@users.noreply.github.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Yoanm\\SymfonyJsonRpcParamsValidator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests",
+            "Tests\\Functional\\BehatContext\\": "features/bootstrap"
+        }
+    },
+    "require": {
+        "php": ">=5.5",
+        "yoanm/jsonrpc-server-sdk": "~2.0",
+        "yoanm/symfony-jsonrpc-http-server": "~1.1",
+        "yoanm/jsonrpc-params-symfony-validator-sdk": "dev-master",
+        "symfony/http-foundation": "^3.0 || ^4.0",
+        "symfony/http-kernel": "^3.0 || ^4.0",
+        "symfony/config": "^3.0 || ^4.0",
+        "symfony/dependency-injection": "^3.0 || ^4.0"
+    },
+    "require-dev": {
+        "behat/behat": "~3.0",
+        "squizlabs/php_codesniffer": "3.*",
+        "phpunit/phpunit": "^6.0 || ^7.0",
+        "matthiasnoback/symfony-dependency-injection-test": "^2.0 || ^3.0",
+        "matthiasnoback/symfony-config-test": "^3.0 || ^4.0",
+        "yoanm/php-unit-extended": "~1.0"
+    }
+}
