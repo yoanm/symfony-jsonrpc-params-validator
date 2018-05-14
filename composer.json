@@ -28,6 +28,7 @@
         "php": ">=5.5",
         "yoanm/jsonrpc-server-sdk": "~2.0",
         "yoanm/symfony-jsonrpc-http-server": "~1.1",
+        "yoanm/symfony-jsonrpc-http-server-doc": "dev-master",
         "yoanm/jsonrpc-params-symfony-validator-sdk": "dev-master",
         "symfony/http-foundation": "^3.0 || ^4.0",
         "symfony/http-kernel": "^3.0 || ^4.0",
