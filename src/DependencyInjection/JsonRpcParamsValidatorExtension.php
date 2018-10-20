@@ -24,7 +24,6 @@ class JsonRpcParamsValidatorExtension implements ExtensionInterface
             new FileLocator(__DIR__.'/../Resources/config')
         );
         $loader->load('services.sdk.yaml');
-        $loader->load('services.public.yaml');
     }
 
     /**

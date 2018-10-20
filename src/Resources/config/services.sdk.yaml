@@ -1,30 +1,8 @@
 services:
-  _defaults:
+  json_rpc_params_validator_sdk.validator:
+    class: Yoanm\JsonRpcParamsSymfonyValidator\Infra\JsonRpcParamsValidator
+    arguments: ['@validator']
     public: true
 
-  json_rpc_params_sf_validator_sdk.validator:
-    class: Yoanm\JsonRpcParamsSymfonyValidator\JsonRpcParamsValidator
-    arguments: ['@validator']
-
-
-  json_rpc_params_sf_validator_sdk.doc.tranformer:
-    class: Yoanm\JsonRpcParamsSymfonyValidator\Doc\Transformer\ConstraintToParamsDocTransformer
-    arguments:
-      - '@json_rpc_params_sf_validator_sdk.doc.helper.type'
-      - '@json_rpc_params_sf_validator_sdk.doc.helper.string'
-      - '@json_rpc_params_sf_validator_sdk.doc.helper.min_max'
-      - '@json_rpc_params_sf_validator_sdk.doc.helper.constrain_doc_payload'
-
-  json_rpc_params_sf_validator_sdk.doc.helper.type:
-    class: Yoanm\JsonRpcParamsSymfonyValidator\Doc\Helper\DocTypeHelper
-    arguments:
-      - '@json_rpc_params_sf_validator_sdk.doc.helper.constrain_doc_payload'
-
-  json_rpc_params_sf_validator_sdk.doc.helper.string:
-    class: Yoanm\JsonRpcParamsSymfonyValidator\Doc\Helper\StringDocHelper
-
-  json_rpc_params_sf_validator_sdk.doc.helper.min_max:
-    class: Yoanm\JsonRpcParamsSymfonyValidator\Doc\Helper\MinMaxHelper
-
-  json_rpc_params_sf_validator_sdk.doc.helper.constrain_doc_payload:
-    class: Yoanm\JsonRpcParamsSymfonyValidator\Doc\Helper\ConstraintDocPayloadHelper
+  # Alias validator in order to have it injected into request handler
+  json_rpc_http_server.alias.params_validator: '@json_rpc_params_validator_sdk.validator'

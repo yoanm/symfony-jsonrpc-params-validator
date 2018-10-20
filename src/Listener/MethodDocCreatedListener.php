@@ -1,12 +1,11 @@
 <?php
 namespace Yoanm\SymfonyJsonRpcParamsValidator\Listener;
 
-use Yoanm\JsonRpcParamsSymfonyValidator\Doc\Transformer\ConstraintToParamsDocTransformer;
-use Yoanm\JsonRpcParamsSymfonyValidator\Model\MethodWithValidatedParams;
+use Yoanm\JsonRpcParamsSymfonyValidator\Domain\Model\MethodWithValidatedParams;
 use Yoanm\SymfonyJsonRpcHttpServerDoc\Event\MethodDocCreatedEvent;
 
 /**
- * Class JsonRpcMethodDocCreatedListener
+ * Class MethodDocCreatedListener
  */
 class MethodDocCreatedListener
 {
