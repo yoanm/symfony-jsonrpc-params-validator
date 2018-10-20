@@ -2,6 +2,7 @@
     "name": "yoanm/symfony-jsonrpc-params-validator",
     "description": "Symfony bundle for easy JSON-RPC params validation",
     "license": "MIT",
+    "minimum-stability": "dev",
     "type": "library",
     "support": {
         "issues": "https://github.com/yoanm/symfony-jsonrpc-params-validator/issues"
@@ -25,10 +26,10 @@
         }
     },
     "require": {
-        "php": ">=5.5",
-        "yoanm/jsonrpc-server-sdk": "~2.0",
-        "yoanm/symfony-jsonrpc-http-server": "~1.1",
-        "yoanm/jsonrpc-params-symfony-validator-sdk": "dev-master",
+        "php": ">=7.1",
+        "yoanm/jsonrpc-server-sdk": "dev-release/3.0.0",
+        "yoanm/symfony-jsonrpc-http-server": "dev-release/1.0.0",
+        "yoanm/jsonrpc-params-symfony-validator-sdk": "dev-release/1.0.0",
         "symfony/http-foundation": "^3.0 || ^4.0",
         "symfony/http-kernel": "^3.0 || ^4.0",
         "symfony/config": "^3.0 || ^4.0",
