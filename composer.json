@@ -22,7 +22,8 @@
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests",
-            "Tests\\Functional\\BehatContext\\": "features/bootstrap"
+            "Tests\\Functional\\BehatContext\\": "features/bootstrap",
+            "DemoApp\\": "features/demo_app/src"
         }
     },
     "require": {
@@ -34,11 +35,15 @@
         "symfony/dependency-injection": "^3.0 || ^4.0"
     },
     "require-dev": {
+        "ext-json": "*",
         "behat/behat": "~3.0",
         "squizlabs/php_codesniffer": "3.*",
         "phpunit/phpunit": "^6.0 || ^7.0",
         "matthiasnoback/symfony-dependency-injection-test": "^2.0 || ^3.0",
         "matthiasnoback/symfony-config-test": "^3.0 || ^4.0",
+        "symfony/framework-bundle": "^3.0 || ^4.0",
+        "symfony/http-kernel": "^3.0 || ^4.0",
+        "symfony/routing": "^3.0 || ^4.0",
         "yoanm/php-unit-extended": "~1.0"
     }
 }
