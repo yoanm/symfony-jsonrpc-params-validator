@@ -1,0 +1,19 @@
+# Configure JSON-RPC method services.
+services:
+  jsonrpc.method.a:
+    class: DemoApp\Method\BasicMethod
+    tags:
+    - { name: 'json_rpc_http_server.jsonrpc_method', method: 'basicMethod' }
+  jsonrpc.method.b:
+    class: DemoApp\Method\BasicMethodWithRequiredParams
+    tags:
+    - { name: 'json_rpc_http_server.jsonrpc_method', method: 'basicMethodWithRequiredParams' }
+
+  ## Resolver mock
+  resolver:
+    class: DemoApp\Resolver\JsonRpcMethodResolver
+    tags: ['json_rpc_http_server.method_aware']
+
+
+  # Alias resolver mock to bundle resolver
+  json_rpc_http_server.alias.method_resolver: '@resolver'
