@@ -8,7 +8,6 @@ use DemoApp\DefaultKernel;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Yoanm\JsonRpcServer\Domain\JsonRpcMethodInterface;
 
 /**
  * Defines application features from the specific context.
