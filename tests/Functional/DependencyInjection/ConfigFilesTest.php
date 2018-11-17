@@ -22,6 +22,7 @@ class ConfigFilesTest extends AbstractTestClass
     }
 
     /**
+     * @dataProvider provideBundlePublicServiceIdAndClass
      * @dataProvider provideSDKInfraServiceIdAndClass
      *
      * @param string $serviceId
@@ -37,6 +38,20 @@ class ConfigFilesTest extends AbstractTestClass
             // Check that service is accessible through the container
             $this->assertNotNull($this->container->get($serviceId));
         }
+    }
+
+    /**
+     * @return array
+     */
+    public function provideBundlePublicServiceIdAndClass()
+    {
+        return [
+            'Bundle - public - Validator alias for Symfony JsonRpc Http server bundle' => [
+                'serviceId' => 'json_rpc_http_server.alias.params_validator',
+                'serviceClassName' => JsonRpcParamsValidator::class,
+                'public' => true,
+            ],
+        ];
     }
 
     /**
