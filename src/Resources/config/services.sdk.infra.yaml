@@ -5,6 +5,3 @@ services:
   json_rpc_params_validator_sdk.validator:
     class: Yoanm\JsonRpcParamsSymfonyValidator\Infra\JsonRpcParamsValidator
     arguments: ['@validator']
-
-  # Alias validator in order to have it injected into request handler
-  json_rpc_http_server.alias.params_validator: '@json_rpc_params_validator_sdk.validator'
