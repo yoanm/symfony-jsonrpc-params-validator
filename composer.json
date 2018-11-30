@@ -34,7 +34,7 @@
     "php": ">=7.1",
     "yoanm/jsonrpc-server-sdk": "dev-release/3.0.0",
     "yoanm/symfony-jsonrpc-http-server": "dev-release/2.0.0",
-    "yoanm/jsonrpc-params-symfony-validator-sdk": "dev-release/1.0.0",
+    "yoanm/jsonrpc-params-symfony-validator-sdk": "dev-release/0.1.0",
     "symfony/http-kernel": "^3.0 || ^4.0",
     "symfony/dependency-injection": "^3.0 || ^4.0"
   },
