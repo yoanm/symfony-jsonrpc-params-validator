@@ -11,6 +11,8 @@ Easy JSON-RPC params validation for [`yoanm/symfony-jsonrpc-http-server`](https:
 
 Symfony bundle for [`yoanm/jsonrpc-params-symfony-validator-sdk`](https://github.com/yoanm/php-jsonrpc-params-symfony-validator-sdk)
 
+See [yoanm/symfony-jsonrpc-params-sf-constraints-doc](https://github.com/yoanm/symfony-jsonrpc-params-sf-constraints-doc) for documentation generation.
+
 ## How to use
 
 Once configured, simply send JSON-RPC request to the server and validator will automatically validate params.
