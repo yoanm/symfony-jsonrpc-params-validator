@@ -7,12 +7,24 @@
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/yoanm/symfony-jsonrpc-params-validator.svg)](https://packagist.org/packages/yoanm/symfony-jsonrpc-params-validator) [![Packagist PHP version](https://img.shields.io/packagist/php-v/yoanm/symfony-jsonrpc-params-validator.svg)](https://packagist.org/packages/yoanm/symfony-jsonrpc-params-validator)
 
-Symfony bundle for easy JSON-RPC params validation
+Easy JSON-RPC params validation for [`yoanm/symfony-jsonrpc-http-server`](https://github.com/yoanm/symfony-jsonrpc-http-server)
+
+Symfony bundle for [`yoanm/jsonrpc-params-symfony-validator-sdk`](https://github.com/yoanm/php-jsonrpc-params-symfony-validator-sdk)
 
 ## How to use
 
+Once configured, simply send JSON-RPC request to the server and validator will automatically validate params.
 
-   
+See below how to configure it.
+
+## Configuration
+
+Bundle requires only one thing : 
+ - JSON-RPC Methods which are compatible with 
+   - [`yoanm/symfony-jsonrpc-http-server`](https://github.com/yoanm/symfony-jsonrpc-http-server)
+   - and [`yoanm/jsonrpc-params-symfony-validator-sdk`](https://github.com/yoanm/php-jsonrpc-params-symfony-validator-sdk)
+ 
+Register JSON-RPC methods as described on [`yoanm/symfony-jsonrpc-http-server`](https://github.com/yoanm/symfony-jsonrpc-http-server) documentation.
 
 ## Contributing
 See [contributing note](./CONTRIBUTING.md)
