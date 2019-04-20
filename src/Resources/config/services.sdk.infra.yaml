@@ -1,0 +1,7 @@
+services:
+  _defaults:
+    public: true
+
+  json_rpc_params_validator_sdk.validator:
+    class: Yoanm\JsonRpcParamsSymfonyValidator\Infra\JsonRpcParamsValidator
+    arguments: ['@validator']
