@@ -39,4 +39,4 @@ cache:
 branches:
   except:
   - /.*\-dev$/
-  - /.*\-patch\-\d+$/
+  - /.*\-patch(\-\d+)?$/
