@@ -33,7 +33,7 @@
     "php": ">=7.1",
     "yoanm/jsonrpc-server-sdk": "^3.0",
     "yoanm/symfony-jsonrpc-http-server": "^2.0",
-    "yoanm/jsonrpc-params-symfony-validator-sdk": "^0.1",
+    "yoanm/jsonrpc-params-symfony-validator-sdk": "^0.2",
     "symfony/http-kernel": "^3.0 || ^4.0",
     "symfony/dependency-injection": "^3.0 || ^4.0"
   },
@@ -42,7 +42,7 @@
     "behat/behat": "~3.0",
     "squizlabs/php_codesniffer": "3.*",
     "phpunit/phpunit": "^7.0 || ^8.0",
-    "matthiasnoback/symfony-dependency-injection-test": "^2.0 || ^3.0",
+    "matthiasnoback/symfony-dependency-injection-test": "^3.0 || ^4.0",
     "matthiasnoback/symfony-config-test": "^3.0 || ^4.0",
     "symfony/framework-bundle": "^3.0 || ^4.0",
     "symfony/routing": "^3.0 || ^4.0",
