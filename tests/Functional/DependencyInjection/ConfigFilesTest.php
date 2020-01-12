@@ -14,7 +14,7 @@ class ConfigFilesTest extends AbstractTestClass
     /**
      * {@inheritdoc}
      */
-    protected function getContainerExtensions()
+    protected function getContainerExtensions(): array
     {
         return [
             new JsonRpcParamsValidatorExtension()
@@ -31,7 +31,7 @@ class ConfigFilesTest extends AbstractTestClass
      */
     public function testShouldHaveService($serviceId, $expectedClassName, $public)
     {
-        $this->load([]);
+        $this->loadContainer([]);
 
         $this->assertContainerBuilderHasService($serviceId, $expectedClassName);
         if (true === $public) {

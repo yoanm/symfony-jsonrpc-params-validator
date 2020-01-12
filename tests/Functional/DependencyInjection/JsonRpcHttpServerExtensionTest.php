@@ -12,7 +12,7 @@ class JsonRpcHttpServerExtensionTest extends AbstractTestClass
     /**
      * {@inheritdoc}
      */
-    protected function getContainerExtensions()
+    protected function getContainerExtensions(): array
     {
         return [
             new JsonRpcParamsValidatorExtension()
@@ -22,7 +22,7 @@ class JsonRpcHttpServerExtensionTest extends AbstractTestClass
 
     public function testShouldBeLoadable()
     {
-        $this->load();
+        $this->loadContainer();
 
         $this->assertValidatorIsUsable();
     }

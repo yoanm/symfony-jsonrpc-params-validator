@@ -15,14 +15,14 @@ abstract class AbstractTestClass extends AbstractExtensionTestCase
     /**
      * {@inheritdoc}
      */
-    protected function getContainerExtensions()
+    protected function getContainerExtensions(): array
     {
         return [
             new JsonRpcParamsValidatorExtension()
         ];
     }
 
-    protected function load(array $configurationValues = [], $mockSfValidator = true)
+    protected function loadContainer(array $configurationValues = [], $mockSfValidator = true): void
     {
         if (true === $mockSfValidator) {
             $sfValidatorDefinition = new Definition(ValidatorInterface::class);
