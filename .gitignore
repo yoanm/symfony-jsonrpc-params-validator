@@ -4,3 +4,5 @@ build
 composer.lock
 # Behat demo app var directory
 features/demo_app/var
+#Phpunit
+.phpunit.result.cache
