@@ -30,12 +30,13 @@
     "yoanm/symfony-jsonrpc-params-sf-constraints-doc": "To generate payload documentation from validation constraints"
   },
   "require": {
-    "php": ">=7.1",
+    "php": ">=7.2",
     "yoanm/jsonrpc-server-sdk": "^3.0",
     "yoanm/symfony-jsonrpc-http-server": "^2.0",
-    "yoanm/jsonrpc-params-symfony-validator-sdk": "^0.2",
-    "symfony/http-kernel": "^3.0 || ^4.0",
-    "symfony/dependency-injection": "^3.0 || ^4.0"
+    "yoanm/jsonrpc-params-symfony-validator-sdk": "^0.3",
+    "symfony/http-kernel": "^4.0 || ^5.0",
+    "symfony/dependency-injection": "4.0 || 5.0",
+    "symfony/config": "4.0 || 5.0"
   },
   "require-dev": {
     "ext-json": "*",
@@ -44,8 +45,8 @@
     "phpunit/phpunit": "^7.0 || ^8.0",
     "matthiasnoback/symfony-dependency-injection-test": "^3.0 || ^4.0",
     "matthiasnoback/symfony-config-test": "^3.0 || ^4.0",
-    "symfony/framework-bundle": "^3.0 || ^4.0",
-    "symfony/routing": "^3.0 || ^4.0",
+    "symfony/framework-bundle": "^4.0 || ^5.0",
+    "symfony/routing": "^4.0 || ^5.0",
     "yoanm/php-unit-extended": "~1.0"
   }
 }
