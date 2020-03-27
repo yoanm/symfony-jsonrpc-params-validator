@@ -33,7 +33,7 @@
     "php": ">=7.1",
     "yoanm/jsonrpc-server-sdk": "^3.0",
     "yoanm/symfony-jsonrpc-http-server": "^2.0",
-    "yoanm/jsonrpc-params-symfony-validator-sdk": "^0.2",
+    "yoanm/jsonrpc-params-symfony-validator-sdk": "^1.0",
     "symfony/http-kernel": "^3.0 || ^4.0",
     "symfony/dependency-injection": "^3.0 || ^4.0"
   },
