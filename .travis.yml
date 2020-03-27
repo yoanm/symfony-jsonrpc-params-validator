@@ -39,3 +39,4 @@ branches:
   except:
   - /.*\-dev$/
   - /.*\-patch(\-\d+)?$/
+  - /^dev-.*/
