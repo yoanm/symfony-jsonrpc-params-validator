@@ -13,6 +13,14 @@ Symfony bundle for [`yoanm/jsonrpc-params-symfony-validator-sdk`](https://github
 
 See [yoanm/symfony-jsonrpc-params-sf-constraints-doc](https://github.com/yoanm/symfony-jsonrpc-params-sf-constraints-doc) for documentation generation.
 
+## Versions
+- Symfony v3/4 - PHP >=7.1 : `^v1.0`
+- Symfony v4/5 - PHP >=7.2 : `^v2.0`
+
+⚠️⚠️ `v0.2.0` is replaced by `v1.0.0` ! ⚠️⚠️
+
+⚠️⚠️ `v0.3.0` was badly taggued, used `v2.0.0` instead ! ⚠️⚠️
+
 ## How to use
 
 Once configured, simply send JSON-RPC request to the server and validator will automatically validate params.
