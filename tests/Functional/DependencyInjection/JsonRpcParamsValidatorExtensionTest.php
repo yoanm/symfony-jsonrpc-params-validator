@@ -7,7 +7,7 @@ use Yoanm\SymfonyJsonRpcParamsValidator\DependencyInjection\JsonRpcParamsValidat
 /**
  * @covers \Yoanm\SymfonyJsonRpcParamsValidator\DependencyInjection\JsonRpcParamsValidatorExtension
  */
-class JsonRpcHttpServerExtensionTest extends AbstractTestClass
+class JsonRpcParamsValidatorExtensionTest extends AbstractTestClass
 {
     /**
      * {@inheritdoc}
