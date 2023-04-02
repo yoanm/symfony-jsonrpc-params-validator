@@ -100,6 +100,7 @@ jobs:
           composer require -W ${{ env.COMPOSER_OPTIONS }} ${{ matrix.composer-flag }} \
             symfony/config:^$SF_VERSION \
             symfony/dependency-injection:^$SF_VERSION \
+            symfony/http-foundation:^$SF_VERSION \
             symfony/http-kernel:^$SF_VERSION \
             symfony/framework-bundle:^$SF_VERSION \
             symfony/routing:^$SF_VERSION \
@@ -249,6 +250,7 @@ jobs:
           && composer require -W ${{ env.COMPOSER_OPTIONS }} \
             symfony/config:^${{ matrix.symfony-version }} \
             symfony/dependency-injection:^${{ matrix.symfony-version }} \
+            symfony/http-foundation:^${{ matrix.symfony-version }} \
             symfony/http-kernel:^${{ matrix.symfony-version }} \
             symfony/framework-bundle:^${{ matrix.symfony-version }} \
             symfony/routing:^${{ matrix.symfony-version }} \
