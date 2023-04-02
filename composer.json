@@ -6,9 +6,6 @@
   "support": {
     "issues": "https://github.com/yoanm/symfony-jsonrpc-params-validator/issues"
   },
-  "config": {
-    "sort-packages": true
-  },
   "authors": [
     {
       "name": "Yoanm",
@@ -39,7 +36,7 @@
     "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0",
     "yoanm/jsonrpc-params-symfony-validator-sdk": "^2.0",
     "yoanm/jsonrpc-server-sdk": "^3.0",
-    "yoanm/symfony-jsonrpc-http-server": "^3.3"
+    "yoanm/symfony-jsonrpc-http-server": "^3.0"
   },
   "require-dev": {
     "ext-json": "*",
