@@ -51,7 +51,7 @@
     "symfony/http-foundation": "^4.4 || ^5.4 || ^6.0",
     "symfony/routing": "^4.4 || ^5.4 || ^6.0",
     "yoanm/jsonrpc-server-sdk": "^3.0",
-    "yoanm/php-unit-extended": "^2.0",
+    "yoanm/php-unit-extended": "^2.0.2",
     "yoanm/symfony-jsonrpc-http-server": "^3.0"
   },
   "config": {
