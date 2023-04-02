@@ -3,7 +3,7 @@ namespace DemoApp;
 
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\Routing\RouteCollectionBuilder;
+use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
 class DefaultKernel extends AbstractKernel
 {
@@ -31,10 +31,10 @@ class DefaultKernel extends AbstractKernel
     /**
      * {@inheritdoc}
      */
-    protected function configureRoutes(RouteCollectionBuilder $routes)
+    protected function configureRoutes(RoutingConfigurator $routes)
     {
         $confDir = $this->getProjectDir().'/'.$this->getConfigDirectory();
-        $routes->import($confDir.'/routes'.self::CONFIG_EXTS, '/', 'glob');
+        $routes->import($confDir.'/routes'.self::CONFIG_EXTS, 'glob');
     }
 
     /**
