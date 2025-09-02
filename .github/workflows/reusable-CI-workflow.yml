@@ -206,7 +206,7 @@ jobs:
           composer require -W \
             symfony/config:${SF_CONSTRAINT} \
             symfony/dependency-injection:${SF_CONSTRAINT} \
-            symfony/http-kernel:${SF_CONSTRAINT} 
+            symfony/http-kernel:${SF_CONSTRAINT} \
           && make build
 
       - name: ComposerRequireChecker
@@ -288,7 +288,7 @@ jobs:
           && composer require -W \
             symfony/config:${SF_CONSTRAINT} \
             symfony/dependency-injection:${SF_CONSTRAINT} \
-            symfony/http-kernel:${SF_CONSTRAINT} 
+            symfony/http-kernel:${SF_CONSTRAINT} \
             ${{ matrix.pkg-extra-constraints }} \
           && make build
 
