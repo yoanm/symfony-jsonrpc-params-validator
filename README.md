@@ -24,15 +24,15 @@ See [yoanm/symfony-jsonrpc-params-sf-constraints-doc](https://github.com/yoanm/s
 
 ## Versions
 
-*   Symfony v3/4 - PHP >=7.1 : `^v1.0`
+* Symfony v3/4 - PHP >=7.1 : `^v1.0`
 
-*   Symfony v4/5 - PHP >=7.2 : `^v2.0`
+* Symfony v4/5 - PHP >=7.2 : `^v2.0`
 
-    ⚠️⚠️ `v0.2.0` is replaced by `v1.0.0` ! ⚠️⚠️
+  ⚠️⚠️ `v0.2.0` is replaced by `v1.0.0` ! ⚠️⚠️
 
-    ⚠️⚠️ `v0.3.0` was badly taggued, used `v2.0.0` instead ! ⚠️⚠️
+  ⚠️⚠️ `v0.3.0` was badly taggued, used `v2.0.0` instead ! ⚠️⚠️
 
-*   Symfony v4.4/5.4/6.x - PHP ^8.0 : `^v2.1`
+* Symfony v4.4/5.4/6.x - PHP ^8.0 : `^v2.1`
 
 ## How to use
 
@@ -44,9 +44,9 @@ See below how to configure it.
 
 Bundle requires only one thing :
 
-*   JSON-RPC Methods which are compatible with
-    *   [`yoanm/symfony-jsonrpc-http-server`](https://github.com/yoanm/symfony-jsonrpc-http-server)
-    *   and [`yoanm/jsonrpc-params-symfony-validator-sdk`](https://github.com/yoanm/php-jsonrpc-params-symfony-validator-sdk)
+* JSON-RPC Methods which are compatible with
+  * [`yoanm/symfony-jsonrpc-http-server`](https://github.com/yoanm/symfony-jsonrpc-http-server)
+  * and [`yoanm/jsonrpc-params-symfony-validator-sdk`](https://github.com/yoanm/php-jsonrpc-params-symfony-validator-sdk)
 
 Register JSON-RPC methods as described on [`yoanm/symfony-jsonrpc-http-server`](https://github.com/yoanm/symfony-jsonrpc-http-server) documentation.
 
