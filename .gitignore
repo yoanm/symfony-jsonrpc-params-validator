@@ -2,7 +2,9 @@ vendor
 build
 #A library must not provide a composer.lock file
 composer.lock
-# Behat demo app var directory
-features/demo_app/var
+
+# Demo app excluded dirs
+features/demo_app/var/
+
 #Phpunit
 .phpunit.result.cache
